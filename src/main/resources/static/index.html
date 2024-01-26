@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontaktide Infosüsteem</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Lisa Uus Kontakt </h2>
+<form id="addContactForm">
+    Pärisnimi: <input type="text" id="realName"><br>
+    Kood-nimi: <input type="text" id="codeName"><br>
+    Telefoninumber: <input type="text" id="phoneNumber"><br>
+    <input type="submit" value="Lisa Kontakt">
+</form>
+
+<div class="search-section">
+    <h2>Otsi Kontakti</h2>
+    Otsi Nime Järgi: <input type="text" id="searchName" onkeyup="searchContacts()">
+    <button id= "searchButton" onclick="searchContacts()">Otsi</button>
+</div>
+
+
+    <div class="sort-section">
+        <h2>Kontaktid</h2>
+        <button id= "sortButton" onclick="sortContactsByName()">Sorteeri Nime Järgi</button>
+        <ul id="contactList">
+        </ul>
+    </div>
+
+    <div id="editContactFormContainer" style="display: none;">
+        <h2>Muuda Kontakti</h2>
+        <form id="editContactForm">
+            Pärisnimi: <input type="text" id="editRealName"><br>
+            Kood-nimi: <input type="text" id="editCodeName"><br>
+            Telefoninumber: <input type="text" id="editPhoneNumber"><br>
+            <input type="hidden" id="editContactId">
+            <input type="submit" value="Save Changes">
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

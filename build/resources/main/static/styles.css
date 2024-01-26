@@ -1,0 +1,114 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+h2 {
+    color: #282A2C;
+    margin-left: 2rem;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input[type=text],
+input[type=submit] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    width: 95%;
+}
+
+input[type=submit] {
+    background: #5cb85c;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background: #4cae4c;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #d9534f;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9302c;
+}
+
+.search-section {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.search-container {
+    margin-bottom: 20px;
+}
+
+.search-container input[type=text] {
+    width: calc(100% - 110px);
+    display: inline-block;
+}
+
+.search-container button {
+    width: 100px;
+    display: inline-block;
+}
+
+#searchButton,
+#sortButton {
+    background-color: #1B91F6;
+    color: white;
+}
+
+#searchButton:hover,
+#sortButton:hover {
+    background-color: #3675C1;
+}
+.sort-section{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+
+.edit-button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #FABC15;
+    color: white;
+    cursor: pointer;
+}
+
+.edit-button:hover {
+    background-color: #A57C0E;
+}
